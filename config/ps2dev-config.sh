@@ -1,11 +1,11 @@
 #!/bin/bash
 
-PS2TOOLCHAIN_REPO_URL="https://github.com/ps2dev/ps2toolchain.git"
-PS2TOOLCHAIN_DEFAULT_REPO_REF="master"
+PS2TOOLCHAIN_REPO_URL="https://github.com/jendo42/ps2toolchain.git"
+PS2TOOLCHAIN_DEFAULT_REPO_REF="MJE-devel"
 PS2SDK_REPO_URL="https://github.com/ps2dev/ps2sdk.git"
 PS2SDK_DEFAULT_REPO_REF="master"
-PS2SDK_PORTS_REPO_URL="https://github.com/ps2dev/ps2sdk-ports.git"
-PS2SDK_PORTS_DEFAULT_REPO_REF="master"
+PS2SDK_PORTS_REPO_URL="https://github.com/jendo42/ps2sdk-ports.git"
+PS2SDK_PORTS_DEFAULT_REPO_REF="MJE-devel"
 PS2_PACKER_REPO_URL="https://github.com/ps2dev/ps2-packer.git"
 PS2_PACKER_DEFAULT_REPO_REF="master"
 PS2CLIENT_REPO_URL="https://github.com/ps2dev/ps2client.git"
