@@ -1,6 +1,16 @@
 #!/bin/bash
 # toolchain.sh by fjtrujy
 
+trap 'catch $? $LINENO' ERR
+catch() {
+	echo
+	echo "##############################################"
+	echo "ps2dev: Build has failed! :("
+	echo "CODE: $1; LINE: $2"
+	echo
+	exit 1
+}
+
 ## Enter the ps2dev directory.
 cd "$(dirname "$0")" || { echo "ERROR: Could not enter the ps2dev directory."; exit 1; }
 
@@ -46,3 +56,8 @@ else
   for SCRIPT in ${BUILD_SCRIPTS[@]}; do "$SCRIPT" "$TAG" || { echo "$SCRIPT: Failed."; exit 1; } done
 
 fi
+
+echo
+echo "##############################################"
+echo "ps2dev: Build is DONE!"
+echo
